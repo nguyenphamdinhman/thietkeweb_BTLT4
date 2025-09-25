@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau9</title>
+    <style>
+        .header{
+            color : lightblue;
+            font-weight : bold;
+            text-align : center;
+            font-size : 20px;
+        }
+        .p{
+            color : lightblue;
+        }
+        tr,td{
+            border : 1px solid lightblue;
+        }
+        table{
+            background-color : lightyellow;
+            border : 3px solid lightblue;
+            border-collapse : collapse;
+        }
+        .fieldset{
+            width : 300px;
+            border : 2px solid brown;
+        }
+        .legend {
+            color : brown;
+            font-style : italic;
+        }
+    </style>
+</head>
+<body>
+    <div class = "header">
+        <p>Đăng ký du lịch</p>
+    </div>
+    <table align = "center" border = "1">
+        <tr>
+            <td> Họ và tên </td>
+            <td><input type = "text"> </td>
+        </tr>
+         <tr>
+            <td> Địa chỉ </td>
+            <td><input type = "text"> </td>
+        </tr>
+         <tr>
+            <td> Điện thoại </td>
+            <td><input type = "number"> </td>
+        </tr>
+        <tr>
+            <td> Khách Việt Nam </td>
+            <td><input type = "checkbox">  
+        </tr>
+         <tr>
+            <td> Chọn Tour </td>
+            <td>  <select> <optgroup label = "Miền Bắc">
+                <option> Hải Phòng - Hà Nội - Bắc Ninh</option>
+                <option> Lai Châu - Lào Cai - Hà Giang</option>
+            </optgroup> 
+            <optgroup label = "Miền Trung">
+                <option> Đà Nẵng - Quảng Nam - Huế</option>
+                <option> Quảng Bình - Quảng Trị - Thừa Thiên Huế</option>
+            </optgroup>
+            <optgroup label = "Miền Nam">
+                <option> Hồ Chí Minh - Cần Thơ - Vũng Tàu</option>
+                <option> Đồng Nai - Bà Rịa - Vũng Tàu</option>
+            </optgroup> </select> </td>
+        </tr>
+        <tr>
+            <td>Phương tiện</td>
+            <td><input type ="radio" name = "phuongtien">Máy bay
+                <input type ="radio" name = "phuongtien">Xe ô tô</td>
+        </tr>
+        
+        <tr> <td colspan = "2" rowspan = "1">
+             <fieldset class = "fieldset">
+                <legend class = "legend"> Số lượng đoàn khách</legend>
+                Người lớn <input type="number" value="6" style="width: 40px;"> 
+                Trẻ em <input type="number" value="4" style="width: 40px;">
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td> Ghi chú thêm </td>
+            <td><textarea> </textarea></td>
+        </tr>
+        <tr>
+            <td align = "center" colspan = "2"><input type = "button" value = "Đồng ý"> </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
