@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau8</title>
+    <style>
+        .header{
+            color : green;
+            font-weight : bold;
+            text-align : center;
+            font-size : 20px;
+        }
+        .p{
+            color : green;
+        }
+        tr,td{
+            border : 1px solid black;
+        }
+        table{
+            background-color : lightgreen;
+            border : 3px solid black;
+            border-collapse : collapse;
+        }
+    </style>
+</head>
+<body>
+    <div class = "header">
+        <p>Phiếu đăng ký tham gia chương trình khuyến mãi </p>
+    </div>
+    <table align = "center" border = "1">
+        <tr>
+            <td> Họ và tên </td>
+            <td><input type = "text"> </td>
+        </tr>
+         <tr>
+            <td> Địa chỉ </td>
+            <td><input type = "text"> </td>
+        </tr>
+         <tr>
+            <td> Họ và tên </td>
+            <td><input type = "number"> </td>
+        </tr>
+        <tr>
+            <td> Phái </td>
+            <td><input type = "radio" name = "sex" > Nam 
+                <input type = "radio" name = "sex" > Nữ </td>
+        </tr>
+         <tr>
+            <td> Nghề nghiệp </td>
+            <td><select> 
+                <option> Giáo viên</option>
+                <option> Học sinh</option>
+                <option> Khác</option> </td>
+            </select>
+        </tr>
+            <tr>
+            <td> Chọn sản phẩm tham gia  </td>
+            <td>  
+               <input type="checkbox" name="sp" value="kem"> Kem đánh răng <br>
+          <input type="checkbox" name="sp" value="bot"> Bột giặt <br>
+          <input type="checkbox" name="sp" value="dau"> Dầu gội đầu <br>
+          <input type="checkbox" name="sp" value="sua"> Sữa tắm
+            </td>
+        </tr>
+        <tr>
+            <td>Số người dự đoán tham gia</td>
+            <td> <input type = "number"> </td>
+        </tr>
+        <tr>
+            <td align = "center" colspan = "2"><input type = "button" value = "Đồng ý"> </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
