@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau11_c</title>
+</head>
+<style>
+    .Menu{
+        background-color: orange;
+    }
+    .Menu ul {
+        list-style : none;
+        display : flex;
+    }
+    .Menu li {
+        position: relative;
+        color : white;
+        font-weight : bold;
+        cursor : pointer;
+        padding : 15px;
+    }
+    .Menu li:hover {
+        background-color: orange;
+    }
+    .Menu li ul {
+            display: none;
+            position: absolute;
+            top : 100%;
+            left : 0;
+            background-color: orange;
+            padding: 0;
+
+     }
+     .Menu li:hover > ul {
+            display: block;
+        }
+     .Menu li ul li {
+            padding: 10px;
+            border-bottom: 1px solid white;
+            width: 100%;
+        }
+    .Menu li ul li:hover {
+            background-color: orange;
+        }
+</style>
+<body>
+    <div class = "Menu">
+       <ul>
+        <li>Giới thiệu </li>
+        <li>Trang chủ</li>
+        <li>Tin tức
+            <ul>
+                <li>Tin thể thao</li>
+                <li>Tin thế giới</li>
+                <li>Tin xã hội</li>
+                <li>Tin khoa học công nghệ
+                    <ul>
+                        <li>Công nghệ mới</li>
+                        <li>Khoa học máy tính</li>
+                        <li>Khoa học vũ trụ</li>
+                        </ul>
+                    </li>
+                 </ul>
+         </li>
+         <li>Liên hệ</li>
+         <li>Góp ý</li>
+ </ul>
+    </div>
+</body>
+</html>
